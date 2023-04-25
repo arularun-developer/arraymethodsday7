@@ -1,4 +1,5 @@
-//  1. Get all the countries from the Asia continent /region using the Filter function
+// Get all the countries from the Asia continent /region using the Filter function
+
 fetch("https://restcountries.com/v3.1/all")
     .then(response => response.json())
     .then(data => {
@@ -8,7 +9,9 @@ fetch("https://restcountries.com/v3.1/all")
         console.log(asiaCountriesname);
     })
 
-//    2. Get all the countries with a population of less than 2 lakhs using Filter function
+
+// Get all the countries with a population of less than 2 lakhs using Filter function
+
 
 fetch("https://restcountries.com/v3.1/all")
     .then(response => response.json())
@@ -19,7 +22,9 @@ fetch("https://restcountries.com/v3.1/all")
         console.log(lessThan2Lakhspop);
     })
 
-//   3.Print the following details name, capital, flag using forEach function 
+
+// Print the following details name, capital, flag using forEach function
+
 
 fetch("https://restcountries.com/v3.1/all")
     .then(response => response.json())
@@ -30,7 +35,9 @@ fetch("https://restcountries.com/v3.1/all")
         });
     })
 
-// 4.Print the total population of countries using reduce function
+
+// Print the total population of countries using reduce function
+
 fetch("https://restcountries.com/v3.1/all")
     .then(response => response.json())
     .then(data => {
@@ -41,8 +48,7 @@ fetch("https://restcountries.com/v3.1/all")
     })
 
 
-//    5. Print the country which uses US Dollars as currency.
-
+// Print the country which uses US Dollars as currency.
 
 fetch("https://restcountries.com/v3.1/all")
     .then(response => response.json())
